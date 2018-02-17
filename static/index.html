@@ -1,1 +1,62 @@
-Hi
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Are you Real?</title>
+	<!-- Make responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Link Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900" rel="stylesheet">
+	<!-- Link styles -->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<!-- Link Bootstrap JS Along with jQuery -->
+	<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- Link Script JS -->
+	<script type="text/javascript" src="assets/utils.js"></script>
+	<!-- Link Main JS -->
+	<script defer type="text/javascript" src="assets/main.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="#">Are you REAL?</a>
+</nav>
+<div class="container" style="overflow-y: scroll;"> 
+	<div class="row big-description">
+		Today, we determine if you are real. You will answer four questions, and we will run our genius algorithm on the answers to decide if you are really real.
+	</div>
+	<div class="row question">What's your name?</div>
+	<div class="row answer">
+		<input id="q-name" type="text" name="q-name" placeholder="name" />
+	</div>
+	<div class="row question">How tall are you? Answer in centimeters.</div>
+	<div class="row answer">
+		<input id="q-height" type="number" name="q-height" placeholder="height in centemers" min="1" value=100 />
+	</div>
+	<div class="row answer">Which of the following do you like the most?</div>
+	<div class="row question">
+		<div class="btn-group btn-group-toggle" data-toggle="buttons">
+  			<label class="btn btn-secondary active" id="vanilla">
+    			<input class="radio-in" type="radio" name="q-like" autocomplete="off" checked>Vanilla
+  			</label>
+  			<label class="btn btn-secondary" id="chocolate">
+    			<input class="radio-in" type="radio" name="q-like" autocomplete="off">Chocolate
+  			</label>
+  			<label class="btn btn-secondary" id="mint">
+    			<input class="radio-in" type="radio" name="q-like" autocomplete="off">Mint
+  			</label>
+		</div>
+	</div>
+	<div class="row answer">On a scale of 1 to 10, what's good!?</div>
+	<div class="row question">
+		<input id="q-scale" type="number" name="q-scale" placeholder="what's good" min=0 max=10 value=5 />
+	</div>
+	<div class="row question submit">
+		<input id="q-submit" type="submit" name="q-submit" value="Submit" />
+	</div>
+</div>
+
+</body>
+</html>

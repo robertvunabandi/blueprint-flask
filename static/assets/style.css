@@ -1,0 +1,66 @@
+.navbar-brand {
+	font-size: 3rem;
+	font-weight: 900;
+}
+.big-description {
+	margin-top: 2rem;
+	font-size: 2rem;
+}
+.question {
+	font-size: 2rem;
+	font-weight: 900;
+}
+.answer {
+	font-size: 2rem;
+	padding: 0 auto;
+}
+.answer * {
+	font-size: inherit;
+}
+* {
+	font-family: 'Muli', sans-serif;
+	transition: all 200ms;
+}
+input {
+	margin: 0 auto;
+	width: 90%;
+	padding: 0.25rem 0.75rem;
+	outline: none;
+	border: none;
+	border-bottom: 3px solid rgba(0,0,0,0.3);
+}
+input:hover {
+	background-color: rgba(255,0,0,0.05);
+}
+input:focus {
+	background-color: rgba(0,100,255,0.3);
+	border-bottom: 3px solid rgba(0,100,255,1);
+}
+.active {
+	background-color: rgba(0,100,255,0.7) !important;
+}
+.btn-group {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+.btn {
+	background-color: white;
+	font-size: 2rem;
+}
+#q-submit {
+	background-color: rgba(255,50,10,0.5);
+	border: 10px solid rgba(0,0,0,0.5);
+	font-weight: 900;
+	width: 50% !important;
+	text-transform: uppercase;
+	margin-top: 1rem;
+	border-radius: 100rem;
+	margin-bottom: 5rem;
+}
+#q-submit:hover {
+	cursor: pointer;
+}
+.navbar, .navbar-brand {
+	background-color: rgba(255, 50, 10, 1) !important;
+	color: white !important;
+}
