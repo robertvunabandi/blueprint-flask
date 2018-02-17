@@ -5,7 +5,8 @@ function populateAverageScore() {
 		url: '/average',
 		success: function(average_score) {
 			// populate the average on the web page
-			document.getElementById('average').innerHMTL = average_score;
+			console.log(average_score);
+			document.getElementById('average').innerHTML = average_score;
 		},
 		error: function(xhr, status, error) {
 			handleError(error);
@@ -19,7 +20,8 @@ function populateMaxScore() {
 		url: '/max',
 		success: function(maximum_score) {
 			// populate the max score on the web page
-			document.getElementById('maximum').innerHMTL = maximum_score;
+			console.log(maximum_score);
+			document.getElementById('maximum').innerHTML = maximum_score;
 		},
 		error: function(xhr, status, error) {
 			handleError(error);

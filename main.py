@@ -23,7 +23,8 @@ def root():
 
 @app.route("/add", methods=["POST"])
 def add():
-    scores.add(request.form['score'])
+    scores.add(int(request.form['score']))
+    return 'success'
 
 @app.route("/average")
 def get_avg():

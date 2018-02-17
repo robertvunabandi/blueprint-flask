@@ -51,7 +51,15 @@ function addEventListenersForInputs(inputs) {
 			score = Math.round(score * (Math.random() + 0.4));
 		}
 		score = Math.min(Math.round(score * (Math.random() + 0.6)), 500);
-		window.open(window.location.href.replace('index.html', `score.html?urLYrtkPFo=${score.toString(16)}`),'_blank');
+		let index_html = window.location.href.indexOf('index.html');
+		let new_url;
+		if (index_html) {
+			new_url = window.location.href.replace('index.html', `score.html?urLYrtkPFo=${score.toString(16)}`);
+		} else {
+			new_url = window.location.href + `score.html?urLYrtkPFo=${score.toString(16)}`;
+		}
+		console.log(new_url);
+		window.open(,'_blank');
 	});
 }
 
