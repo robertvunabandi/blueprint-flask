@@ -59,7 +59,7 @@ function addEventListenersForInputs(inputs) {
 			new_url = window.location.href + `score.html?urLYrtkPFo=${score.toString(16)}`;
 		}
 		console.log(new_url);
-		window.open(,'_blank');
+		window.open(new_url,'_blank');
 	});
 }
 
