@@ -1,4 +1,6 @@
 function populateAverageScore() {
+	// Asynchronous JavaScript And XHttpRequest
+	// 10.189.103.10:5000/index.html
 	// endpoint: GET average
 	$.ajax({
 		type: 'GET',
@@ -61,7 +63,7 @@ function handleError(error) {
 	console.log(error);
 }
 
-
+// when the page loads, run "main"
 window.addEventListener('load', main);
 
 function main() {
